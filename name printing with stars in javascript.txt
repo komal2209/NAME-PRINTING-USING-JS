@@ -1,0 +1,137 @@
+<style>
+  .change{
+   -webkit-animation:color 5s infinite alternate;
+      
+      
+    }
+
+    @-webkit-keyframes color {
+      0% {
+        
+        color: orange;
+      }
+      
+      20%{
+        color: blue;
+      }
+      
+      40% {
+        color:green;
+      }
+      
+      60% {
+        color:violet;
+      }
+      80% {
+        color:pink;
+      }
+      100% {
+        color:yellow;
+      }
+  </style>
+
+<div class="change"><script type="text/javascript">
+    
+// to print K
+	for(var i=0;i<7;i++)
+	{
+	    for(var j=0;j<7;j++)
+	    {
+	        if((j==0)||(3-j==i)||(3+j==i))
+	        {
+	            document.write('*');
+	        }
+	       
+	    
+	        else
+	        {
+	               document.write('&nbsp &nbsp');
+	        }
+	    }
+	       document.write('<br />');
+	}
+   document.write('<br />');
+	
+	// to print A
+for(var i=0;i<6;i++)
+	{
+	    for(var j=0;j<6;j++)
+	    {
+	         if((j==0)||(i==5)||(i==0)||(j==5))
+	        {
+   document.write('*');
+	        }
+	       
+	    
+	        else
+	        {
+	               document.write('&nbsp ');
+	        }
+	    }
+	      document.write('<br />');
+	}
+	   document.write('<br />');
+	
+	// to print M
+	for(var i=0;i<5;i++)
+	{
+	    for(var j=0;j<5;j++)
+	    {
+	         if((j==0)||(j==4)||(((i==j)||(i%2!=0&&j%2!=0))&&(i<3)))
+	        {
+	             document.write('*');
+	        }
+	       
+	    
+	        else
+	        {
+	               document.write('&nbsp ');
+	        }
+	    }
+	    document.write('<br />');
+	}
+	   document.write('<br />');
+	
+	
+
+ 
+ // to print O
+	for(var i=0;i<5;i++)
+	{
+	    for(var j=0;j<5;j++)
+	    {
+	         if(i==0||j==0||i==2||j==4)   
+	        {
+	              document.write('*');
+	        }
+	       
+	    
+	        else
+	        {
+	               document.write('&nbsp ');
+	        }
+	    }
+	       document.write('<br />');
+	}
+	   document.write('<br />');
+//to print L
+	
+	for(var  i=0;i<5;i++)
+	{
+	    for(var j=0;j<5;j++)
+	    {
+	         if(j==0||i==4)   
+	        {
+	             document.write('*');
+	        }
+	       
+	    
+	        else
+	        {
+	               document.write('&nbsp ');
+	        }
+	    }
+	       document.write('<br />');
+	}
+	   document.write('<br />');
+  </script></div>
